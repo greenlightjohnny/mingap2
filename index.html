@@ -1,0 +1,327 @@
+<?php require_once( 'couch/cms.php' ); ?> 
+
+<!DOCTYPE html> 
+<html lang="en">
+<!--
+* For the brave souls who get this far: You are the chosen ones,
+* the valiant knights of programming who toil away, without rest,
+* fixing our most awful code. Understanding the markup.
+* To you, true saviors, kings of men,
+* I say this: never gonna give you up, never gonna let you down,
+* never gonna run around and desert you. Never gonna make you cry,
+* never gonna say goodbye. Never gonna tell a lie and hurt you.
+
+      /^\      /^\
+      |  \    /  |
+      ||\ \../ /||
+      )'        `(
+     ,;`w,    ,w';,
+     ;,  ) __ (  ,;
+      ;  \(\/)/  ;;
+     ;|  |vwwv|    ``-...
+      ;  `lwwl'   ;      ```''-.
+     ;| ; `""' ; ;              `.
+      ;         ,   ,          , |
+      '  ;      ;   l    .     | |
+      ;    ,  ,    |,-,._|      \;
+       ;  ; `' ;   '    \ `\     \;
+       |  |    |  |     |   |    |;
+       |  ;    ;  |      \   \   (;
+       | |      | l       | | \  |
+       | |      | |       | |  ) |
+       | |      | ;       | |  | |
+       ; ,      : ,      ,_.'  | |
+      :__'      | |           ,_.'
+               `--'
+<link rel="manifest" href="IMG/site.webmanifest">
+ <link rel="preconnect" href="https://fonts.googleapis.com"  crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com"  crossorigin>
+
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://app.snipcart.com"  crossorigin>
+    <link rel="stylesheet" href="/CSS/style.css">
+
+
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+    <meta name="description"
+        content="Minimal gap apiary website, information on bees, colonies, honey for sale, nucs, and queens">
+    <link rel="apple-touch-icon" sizes="180x180" href="/IMG/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/IMG/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="IMG/favicon-16x16.png">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minimal Gap</title>
+</head>
+
+<body>
+    <header>
+        <div class="opacityAnchor"></div>
+        <h1><span class="blueHighlight">Minimal Gap</span> <br> Apiary</h1>
+    </header>
+
+    <main>
+        <div class="navAnch"></div>
+        <nav>
+            <div class="logo">
+                <img src="/IMG/dlogo.png" alt="Drawing of a bee">
+            </div>
+            <ul>
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="/index.php#navAb">About</a></li>
+
+                <li><a href="/index.php#navS">Store</a></li>
+                <li><a href="/index.php#navC">Contact</a></li>
+            </ul>
+            <div class="menuIcon">
+                <button type="button" aria-label="Menu open and close button">
+                    <span class="ham topBar"></span>
+                    <span class="ham middleBar"></span>
+                    <span class="ham bottomBar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="anchor" id="navA"></div>
+
+
+        <!---------------About ------------------------->
+       
+        <div class="anchor" id="navAb"></div>
+        <section class="about" id="about">
+
+        
+            <section class="centert">
+                <div class="flexNew"> 
+                    <div class="intro">
+                        
+                        
+                        <p><cms:editable name='intro_one' label='Main Intro'>
+                            <span class="bold">WE ARE</span> a family owned and operated bee keeping apiary in the Blue Ridge mountains of
+                            Virginia. Since 2009 we have been gradually increasing our size, and we now operate three
+                            seperate locations. We produce and sell honey, bees wax candles, queens, and nucs.</cms:editable>
+                        </p>
+
+                            <p>
+                            <cms:editable name='intro_two' label="Intro Two" >
+                                <span class="bold">OUR MISSION</span> is to sustainably increase the number of bee colonies in the New River Valley. We hope to achive this through education of the public, helping new beekeepers, and increasing the amount of our own colonies. 
+                            </cms:editable>
+                        </p>
+                        
+                    </div>
+
+                    <div class="info">
+                        <div class="flexAgain">
+                            <div class="card lazy edu">
+                            
+                                <h4>Educate</h4>
+                                <p><cms:editable name='phoneone' label='Photo One'>We are always looking for new ways to educate public on the extreme importance of pollinators to our ecosystem.
+                                </cms:editable>
+                                </p>
+                                
+                            </div>
+                            <div class="card lazy grow">
+                           
+                                <h4>Grow</h4>
+                                <p>
+                                <cms:editable name='phonetwo' label='Photo Two'>
+                                    All of our profits, if any,  are invested back into growing our apiary. It is a yearly battle with colony collapse a constant threat.
+                                    </cms:editable>
+                                </p>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="info">
+
+                            <div class="flexAgain">
+                                    <div class="card lazy create">
+                                    
+                                        <h4>Create</h4>
+                                        <p>
+                                        <cms:editable name='photothree' label='Photo Three'>    
+                                        Creating the next generation of beekeepers is extremely important. We stay active in local beekeeping clubs, always happy to help out new members.
+                                        </cms:editable>
+                                    </p>
+                                        
+                                    </div>
+                                    <div class="card lazy enjoy">
+                                    
+                                        <h4>Enjoy</h4>
+                                        <p>
+                                        <cms:editable name='photofour' label='Photo Four'>
+                                            It's not all work! We use our own products almost daily, using honey as a substitue for sugar.
+                                            </cms:editable>
+                                        </p>
+                                        
+                                    </div>
+
+                                </div>
+                    </div>
+                </div>
+            </section>
+            
+
+        </section>
+        
+
+        <!----------------------Store------------------------->
+        
+        <div class="anchor" id="navS"></div>
+        <section class="store" id="store">
+            <h2> Products
+                <!--<i class="fas fa-shopping-cart"></i>-->
+            </h2>
+            <div class="storeTop">
+                <h3> We sell things <br> <span class="some">(sometimes)</span></h3>
+
+            </div>
+
+            <div class="items">
+                <div class="card">
+                    <div class="imgc">
+                        <img loading="lazy" class="lazy" data-src="/IMG/nhoney.jpg" alt="A jar of honey" />
+                    </div>
+                    <cms:editable name='itemone' label='Item One'>
+                    <h3>Honey</h3>
+                    <h4> Sourced From Our Hives In Floyd</h4>
+                    <p class="price">$22</p>
+                    <p>We harvest honey in the summer months after the bees have collected nectar from
+                        spring flowers. Our honey is sold locally and regionally at various shops and
+                        festivals. We can also ship honey to you.</p>
+                        </cms:editable>
+                        <button
+    class="button button--buy snipcart-add-item"
+    data-item-id="2"
+    data-item-name="Honey"
+    data-item-price="15.00"
+    data-item-weight="20"
+    data-item-url="https://ontair.github.io/index.html"
+    data-item-description="Local honey">
+        Add to Cart
+</button>
+
+                </div>
+
+                <div class="card">
+                    <div class="imgc">
+                        <img loading="lazy" class="lazy" data-src="/IMG/candle2.webp" alt="A lit candle"  >
+                    </div>
+                    <cms:editable name='itemtwo' label='Item Two'>
+                    <h3>Candles</h3>
+                    <h4>Beautiful Beeswax Candles</h4>
+                    <p class="price">$22</p>
+                    <p>Our 100% pure beeswax candles are not your normal candles! Beeswax candles burn slower, produces a brighter light, and are extremely clean compared with none-beeswax candles. Not to mention environmentally friendly</p>
+                    </cms:editable>
+                        <button
+                        class="snipcart-add-item"
+                        data-item-id="2"
+                        data-item-name="Honey"
+                        data-item-price="15.00"
+                        data-item-weight="20"
+                        data-item-url="https://ontair.github.io/index.html"
+                        data-item-description="Local honey">
+                            Add to cart
+                    </button>
+                   
+                </div>
+
+
+                <div class="card">
+                    <div class="imgc">
+                        <img loading="lazy" class="lazy" data-src="/IMG/sidecomp.jpg" alt="A bee landing on a flower">
+                    </div>
+                    <cms:editable name='itmethree' label='Item Three'>
+                    <h3>Queens</h3>
+                    <h4>Queen Bees</h4>
+                    <p class="price">Contact Us!</p>
+                    <p>Depending on the time of year we often have marked Queen bees available. We don't ship these, but
+                        can arrange local pickup in the New River Valley region at one of our locations. Contact us for more information!</p>
+                        </cms:editable>
+                        <a id="cButton" href="/index.html#contact"><button class="bStyle">Contact</button></a>
+                        
+                </div>
+            </div>
+
+        </section>
+
+        <div class="anchor" id="navC"></div>
+       
+
+        <!--------------------CONTACT--------------------------------->
+        
+        <section class="contact" id="contact">
+        
+            <h2 class="highlightY">Get in Touch! </h2>
+            <div class="contactFlex">
+            
+                <div class="contactTop">
+                    <p>
+                    <cms:editable name='contact' label='Contact'>
+                        We love hearing from people! If you have any questions, product stock inquiries, feedback, or a
+                        good 'ol fashioned death threat, please fill out the form below. We also left our landline
+                        number (our central farm and colony locations have no cell service) if you feel like starting a
+                        game of phone tag. 
+                        </cms:editable>
+                        <br>
+                        <div class="padding">
+                            <span class="phone">&phone;</span> <a href="tel:+01-540-222-2222">(540) 333-3333</a><br>
+
+                            <span class="phone">&#9993;</span> <a href="mailto:support@minimalgap.org">support@minimalgap.org</a>
+                        </div>
+                    </p>
+                </div>
+                
+
+                <div class="form">
+                    <form id="contactform" action="//formspree.io/support@minimalgap.org" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Brad Pitt">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="_replyto" id="email" placeholder="me@gmail.com">
+
+                        <label for="text">Message</label>
+                        <textarea name="message" id="text" placeholder="Ask us anything!"></textarea>
+                        <label for="button"></label>
+                        <input id="button" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+    
+    <footer>
+    <div>
+
+
+All rights reserved &copy 2019 Minimal Gap
+</div>
+      </footer>
+   
+    <script src="/JS/main.js"></script>
+
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="Y2IyOWYxZjEtZTg0OS00ZTEwLTk4ZTUtNjE5MmQyZTQ2MzJmNjM3MDYxNjM4MDkxMDI2NTcw"></script>
+
+
+
+    
+
+
+
+
+
+</body>
+
+</html>
+
+<?php COUCH::invoke(); ?>

@@ -1,0 +1,412 @@
+<div class="anchor" id="navAb"></div>
+        <section class="about" id="about">
+            <div class="sTitle"> <h2> About</h2>
+            <p>Our Story</p>
+            </div>
+ 
+            <article>
+                <div class="past">
+                    <h3>The Apiary <br>
+                       <!-- <i class="fas fa-backward"></i> --></h3> 
+                    <p>We started keeping bees in 2009 with 2 colonies. As we learned more about bees,
+                            we increased our colony numbers and now maintain about 40 colonies. We harvest
+                            honey from them, sell ‘nucs’ in the spring, and graft and sell queens. In addition, we
+                            make products from bees wax.</p>
+                </div>
+
+                <div class="present">
+                    <h3>Education <br>
+                       <!-- <i class="fas fa-play"></i>
+                       --> </h3> 
+                    <p>Educating the public about the importance of honeybees to our food supply is a
+                            passion for us. We have given talks and demonstrations to interested groups and
+                            regional bee clubs on various aspects of beekeeping. We have even tailored the talks
+                            to young children and middle schoolers. Send us an email inquiry if you have a
+                            group in mind.</p>
+                </div>
+
+                <div class="future">
+                    <h3>Creations<br>
+                       <!-- <i class="fas fa-forward"></i> --></h3>
+                    <p>Several family members are artists and have created a series of paintings dealing
+                            with beekeepers and honeybees. Many of these have been sold but a few remain; if
+                            you are interested in any artwork dealing with honeybees, send us an email inquiry.
+                            Commission work is also accepted and we will be happy to speak with you.</p>
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         /**************************************************************************
+*********************** ABOUT *****************************************/
+
+
+.about {
+    
+    background-image: linear-gradient(to bottom, #fdfdfd, #fbfbfb, #f9f9f9, #f7f7f7, #f5f5f5);
+    padding-bottom: 3rem;
+        @include tabletP {
+            
+        }
+    
+        .sTitle {
+            text-align: center;
+        }
+    
+
+    h2 {
+        
+        @include sectionHeading;
+        padding-bottom: 0;
+        color: $offblack;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        
+    
+    }
+
+
+    h2:before, h2:after {
+        content: '';
+        border-top: 5px solid;
+        flex: 1 0 20px;
+        margin: 0 20px 0 20px;
+        color: $newyellow;
+    }
+
+    h2:after {
+        margin: 0 20px 0 20px;
+    }
+    p {
+        line-height: 1.7rem;
+        color: $offblack;
+        @include paragraphPadding;
+    }
+
+    h3 {
+        padding-top: 1rem;
+        @include subHeading;
+        color: $offblack;
+        padding-bottom: 1rem;
+       
+    }
+    
+
+    article {
+
+        div {
+            @include tabletP {
+            min-width: 300px;
+             max-width: 500px;
+             background: #fff;
+             margin: auto;
+             margin-bottom: 1.6rem;
+             border-radius: 19px;
+             box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+            }
+
+            @include tabletL {
+                margin: 2rem;
+            }
+        }
+        
+        @include tabletP {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        @include tabletL {
+            color: $offwhite;
+            
+            
+           
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.articles {
+  background-image: linear-gradient(#242424, #0c0c0c);
+  padding-bottom: 3rem;
+  display: none;
+}
+#tt {
+  @include sectionHeading;
+}
+////////// ABOUT ///////////////////////////////////////////
+
+.about {
+  .centert {
+    .flex {
+      @include tabletL {
+        display: flex;
+        flex-wrap: wrap;
+        
+
+        div {
+          flex: 1 1 0;
+        }
+      }
+
+      .text {
+          
+        p {
+          padding: 1rem;
+          padding-top: 1.5rem;
+          font-family: "Montserrat";
+
+          font-size: 1.2rem;
+          line-height: 1.7rem;
+          @include tabletL {
+            max-width: 500px;
+          }
+        }
+        h2 {
+          padding-top: 2rem;
+          text-align: center;
+          font-size: 2.2rem;
+          font-weight: bold;
+
+          @include tabletL {
+            max-width: 500px;
+            text-align: left;
+          }
+        }
+      }
+
+      .pic {
+        display: flex;
+        max-height: 50vh;
+        flex: 1;
+
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+          display: flex;
+          flex: 1;
+          
+          
+        }
+      }
+    }
+
+    @include tabletL {
+      .flex:nth-child(odd) {
+        p {
+          padding-left: 10%;
+          padding-right: 4rem;
+          margin-left: auto;
+        }
+
+        h2 {
+          margin-left: auto;
+          justify-content: left;
+          padding-left: 10%;
+        }
+      }
+
+      .flex:nth-child(even) {
+        p {
+          padding-right: 10%;
+          padding-left: 4rem;
+          color: #f4f4f4;
+        }
+
+        h2 {
+          margin-right: auto;
+          justify-content: right;
+          padding-left: 4rem;
+          color: #f4f4f4;
+        }
+
+        .text {
+          background: $offblack;
+        }
+      }
+    }
+
+    .middleFlex {
+      display: flex;
+      flex: 1;
+      flex-direction: column-reverse;
+
+      @include tabletL {
+        flex-direction: row;
+        background: $offblack;
+      }
+    }
+  }
+
+  background-image: linear-gradient(to bottom, #fdfdfd, #fbfbfb, #f9f9f9, #f7f7f7, #f5f5f5);
+  
+
+  @include tabletP {
+  }
+
+  .sTitle {
+    text-align: center;
+  }
+
+  h2 {
+    @include sectionHeading;
+    padding-bottom: 0;
+    color: $offblack;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  p {
+    color: $offblack;
+
+    @include paragraphPadding;
+    padding-top: 0;
+  }
+
+  h3 {
+    padding-top: 1rem;
+    @include subHeading;
+    color: $offblack;
+    padding-bottom: 1rem;
+  }
+
+  article {
+    div {
+      @include tabletP {
+        min-width: 300px;
+        max-width: 500px;
+        background: #fff;
+        margin: auto;
+        margin-bottom: 1.6rem;
+        border-radius: 19px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      @include tabletL {
+        margin: 2rem;
+      }
+    }
+
+    @include tabletP {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    @include tabletL {
+      color: $offwhite;
+
+      display: flex;
+      flex: 1;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+ <div class="flex">
+
+                    <div class="text">
+                        <h2>The Apiary</h2>
+                        <p>We are a family owned and operated bee keeping apiary in the Blue Ridge mountains of
+                            Virginia. Since 2009 we have been gradually increasing our size, and we now operate three
+                            seperate locations. We produce and sell honey, bees wax candles, queens, and nucs.</p>
+                    </div>
+                    <div class="pic">
+                        <img src="/IMG4/placeholder.webp" alt="">
+                    </div>
+                </div>
+                <div class="flex middleFlex">
+                    <div class="pic">
+                        <img src="/IMG4/placeholder2.webp" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Education</h2>
+                        <p>Educating the public about the importance of honeybees to our food supply is a
+                            passion for us. We have given talks and demonstrations to interested groups and
+                            regional bee clubs on various aspects of beekeeping. We have even tailored the talks
+                            to young children and middle schoolers. Send us an email inquiry if you have a
+                            group in mind.</p>
+                    </div>
+
+                </div>
+                <div class="flex">
+                    <div class="text">
+                        <h2>Creations</h2>
+                        <p>Several family members are artists and have created a series of paintings dealing
+                            with beekeepers and honeybees. Many of these have been sold but a few remain; if
+                            you are interested in any artwork dealing with honeybees, send us an email inquiry.
+                            Commission work is also accepted and we will be happy to speak with you.</p>
+                    </div>
+                    <div class="pic">
+                        <img src="/IMG4/placeholder3.webp" alt="">
+                    </div>
+                </div>
+
+
