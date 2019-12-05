@@ -1,4 +1,4 @@
-<?php require_once( 'couch/cms.php' ); ?> 
+
 
 <!DOCTYPE html> 
 <html lang="en">
@@ -43,11 +43,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://app.snipcart.com"  crossorigin>
+    
     <link rel="stylesheet" href="/CSS/style.css">
 
 
-    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+    
     <meta name="description"
         content="Minimal gap apiary website, information on bees, colonies, honey for sale, nucs, and queens">
     <link rel="apple-touch-icon" sizes="180x180" href="/IMG/apple-touch-icon.png">
@@ -71,11 +71,11 @@
                 <img src="/IMG/dlogo.png" alt="Drawing of a bee">
             </div>
             <ul>
-                <li><a href="/index.php">Home</a></li>
-                <li><a href="/index.php#navAb">About</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#navAb">About</a></li>
 
-                <li><a href="/index.php#navS">Store</a></li>
-                <li><a href="/index.php#navC">Contact</a></li>
+                <li><a href="/index.html#navS">Store</a></li>
+                <li><a href="/index.html#navC">Contact</a></li>
             </ul>
             <div class="menuIcon">
                 <button type="button" aria-label="Menu open and close button">
@@ -100,16 +100,16 @@
                     <div class="intro">
                         
                         
-                        <p><cms:editable name='intro_one' label='Main Intro'>
+                        <p>
                             <span class="bold">WE ARE</span> a family owned and operated bee keeping apiary in the Blue Ridge mountains of
                             Virginia. Since 2009 we have been gradually increasing our size, and we now operate three
-                            seperate locations. We produce and sell honey, bees wax candles, queens, and nucs.</cms:editable>
+                            seperate locations. We produce and sell honey, bees wax candles, queens, and nucs.
                         </p>
 
                             <p>
-                            <cms:editable name='intro_two' label="Intro Two" >
+                            
                                 <span class="bold">OUR MISSION</span> is to sustainably increase the number of bee colonies in the New River Valley. We hope to achive this through education of the public, helping new beekeepers, and increasing the amount of our own colonies. 
-                            </cms:editable>
+                            
                         </p>
                         
                     </div>
@@ -119,8 +119,8 @@
                             <div class="card lazy edu">
                             
                                 <h4>Educate</h4>
-                                <p><cms:editable name='phoneone' label='Photo One'>We are always looking for new ways to educate public on the extreme importance of pollinators to our ecosystem.
-                                </cms:editable>
+                                <p>We are always looking for new ways to educate public on the extreme importance of pollinators to our ecosystem.
+                                
                                 </p>
                                 
                             </div>
@@ -128,9 +128,9 @@
                            
                                 <h4>Grow</h4>
                                 <p>
-                                <cms:editable name='phonetwo' label='Photo Two'>
+                               
                                     All of our profits, if any,  are invested back into growing our apiary. It is a yearly battle with colony collapse a constant threat.
-                                    </cms:editable>
+                                   
                                 </p>
                                 
                             </div>
@@ -144,9 +144,9 @@
                                     
                                         <h4>Create</h4>
                                         <p>
-                                        <cms:editable name='photothree' label='Photo Three'>    
+                                          
                                         Creating the next generation of beekeepers is extremely important. We stay active in local beekeeping clubs, always happy to help out new members.
-                                        </cms:editable>
+                                       
                                     </p>
                                         
                                     </div>
@@ -154,9 +154,9 @@
                                     
                                         <h4>Enjoy</h4>
                                         <p>
-                                        <cms:editable name='photofour' label='Photo Four'>
+                                       
                                             It's not all work! We use our own products almost daily, using honey as a substitue for sugar.
-                                            </cms:editable>
+                                            
                                         </p>
                                         
                                     </div>
@@ -177,7 +177,7 @@
             <h2> Products
                 <!--<i class="fas fa-shopping-cart"></i>-->
             </h2>
-            <div class="storeTop">
+            <!-- <div class="storeTop">
                 <h3> We sell things <br> <span class="some">(sometimes)</span></h3>
 
             </div>
@@ -246,7 +246,7 @@
                         <a id="cButton" href="/index.html#contact"><button class="bStyle">Contact</button></a>
                         
                 </div>
-            </div>
+            </div> -->
 
         </section>
 
@@ -262,12 +262,12 @@
             
                 <div class="contactTop">
                     <p>
-                    <cms:editable name='contact' label='Contact'>
+                    
                         We love hearing from people! If you have any questions, product stock inquiries, feedback, or a
                         good 'ol fashioned death threat, please fill out the form below. We also left our landline
                         number (our central farm and colony locations have no cell service) if you feel like starting a
                         game of phone tag. 
-                        </cms:editable>
+                        
                         <br>
                         <div class="padding">
                             <span class="phone">&phone;</span> <a href="tel:+01-540-222-2222">(540) 333-3333</a><br>
@@ -308,9 +308,7 @@ All rights reserved &copy 2019 Minimal Gap
    
     <script src="/JS/main.js"></script>
 
-     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="Y2IyOWYxZjEtZTg0OS00ZTEwLTk4ZTUtNjE5MmQyZTQ2MzJmNjM3MDYxNjM4MDkxMDI2NTcw"></script>
+     
 
 
 
@@ -324,4 +322,3 @@ All rights reserved &copy 2019 Minimal Gap
 
 </html>
 
-<?php COUCH::invoke(); ?>
